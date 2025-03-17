@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #0d0123;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                rgba(163, 159, 159, 0.197) 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                rgba(163, 159, 159, 0.197) 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images/imagine-site-1.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/imagine-site-2.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/imagine-site-1.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images/imagine-site-2.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images/imagine-site-1.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images/imagine-site-2.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images/imagine-site-1.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images/imagine-site-2.png" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images/imagine-site-1.png" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images/imagine-site-2.png" alt=""></div>
+        </div>
+        <div class="content">
+            <h1>
+                WIB Tech Solutions
+            </h1>
+        </div>    
+    </div>
+
+        <div class="slogan">
+               <h2>Iti cream websiteul <b>GRATUIT</b> !</h2>
+        </div>
+        <div class="alege">
+            <h2>Alege planul cel mai potrivit</h2>
+        </div>
+        <section>
+ 
+            <div class="card">
+                <p class="card-title">Pagina de prezentare</p>
+                <h2 class="price">80€ </h2>
+                <span>euro / luna</span>
+                <div class="specificatii">
+                    <p>Design modern și responsive</p>
+                    <p>Pagină principală + 3-5 secțiuni esențiale</p>
+                    <p>Optimizare SEO de bază</p>
+                </div>
+               
+                  
+                <button> Afla mai multe </button>
+
+            </div>
+        
+            <div class="card">
+                <p class="card-title">Pagina de prezentare Pro</p>
+                <h2 class="price">150€</h2>
+                <span>euro / lună</span>
+                <div class="specificatii">
+                    <p>Tot ce include pachetul de bază</p>
+                    <p>Design personalizat și animații</p>
+                    <p>Optimizare avansată pentru viteza site-ului</p>
+                    
+                    
+                </div>
+                <button> Afla mai multe </button>
+            </div>
+        
+            <div class="card">
+                <p class="card-title">Magazin Online</p>
+                <h2 class="price">450€ </h2>
+                <span>euro / lună</span>
+                <div class="specificatii">
+                    <p>Tot ce include pachetul „Website Prezentare Pro”</p>
+                    <p>Metode de plată online</p>
+                    <p>Sistem de administrare produse</p>
+                    
+                </div>
+                <button> Afla mai multe </button>
+            </div>
+        
+        </section>
+
+            <div class="contact-container">
+                <h2>Contact</h2> 
+             <div class="imparte2">
+                 <section id="contact">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+40 123 456 789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>exemplu@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-description">
+                        <p>Contacteaza-ne pentru a te indruma catre planul
+                            cel mai potrivit modelului tau de bussines.
+                        </p>
+                    </div>
+                 </section>
+                 
+                 <div class="form-container">
+                    <form class="form">
+                      <div class="form-group">
+                        <label for="email">Company Email</label>
+                        <input type="text" id="email" name="email" required="">
+                      </div>
+                      <div class="form-group">
+                        <label for="textarea">How Can We Help You?</label>
+                        <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+                      </div>
+                      <button class="form-submit-btn" type="submit">Submit</button>
+                    </form>
+                  </div>
+                    
+                        
+                    
+             </div>   
+               
+                
+            </div>
+           
+        
+        
+    
+</body>
+<footer>
+    <p>&copy; 2025 WIB Tech Solutions. All rights reserved.</p>
+</footer>
+</html>
